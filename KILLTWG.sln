@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KILLTWG", "KILLTWG\KILLTWG.vbproj", "{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		KILLTWG|Any CPU = KILLTWG|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.KILLTWG|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1CFE5DD-2142-470B-AEAF-87F991AF6926}
+	EndGlobalSection
+EndGlobal
