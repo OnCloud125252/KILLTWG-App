@@ -148,12 +148,10 @@ Partial Class KILLTWG_form
         Me.KILLTWGver_linklabel.AutoSize = True
         Me.KILLTWGver_linklabel.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
         Me.KILLTWGver_linklabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.KILLTWGver_linklabel.Location = New System.Drawing.Point(213, 21)
+        Me.KILLTWGver_linklabel.Location = New System.Drawing.Point(216, 21)
         Me.KILLTWGver_linklabel.Name = "KILLTWGver_linklabel"
-        Me.KILLTWGver_linklabel.Size = New System.Drawing.Size(47, 17)
+        Me.KILLTWGver_linklabel.Size = New System.Drawing.Size(0, 17)
         Me.KILLTWGver_linklabel.TabIndex = 3
-        Me.KILLTWGver_linklabel.TabStop = True
-        Me.KILLTWGver_linklabel.Text = "v 1.0.0"
         Me.KILLTWGver_linklabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GithubRepo_label
