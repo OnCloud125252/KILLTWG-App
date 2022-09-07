@@ -43,7 +43,7 @@ Partial Class KILLTWG_form
         '
         Me.KILLTWG_label.AutoSize = True
         Me.KILLTWG_label.Font = New System.Drawing.Font("Algerian", 30.0!, System.Drawing.FontStyle.Bold)
-        Me.KILLTWG_label.Location = New System.Drawing.Point(40, 9)
+        Me.KILLTWG_label.Location = New System.Drawing.Point(54, 9)
         Me.KILLTWG_label.Name = "KILLTWG_label"
         Me.KILLTWG_label.Size = New System.Drawing.Size(192, 45)
         Me.KILLTWG_label.TabIndex = 4
@@ -134,7 +134,7 @@ Partial Class KILLTWG_form
         Me.WrittenBy_linklabel.AutoSize = True
         Me.WrittenBy_linklabel.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
         Me.WrittenBy_linklabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.WrittenBy_linklabel.Location = New System.Drawing.Point(220, 43)
+        Me.WrittenBy_linklabel.Location = New System.Drawing.Point(219, 43)
         Me.WrittenBy_linklabel.Name = "WrittenBy_linklabel"
         Me.WrittenBy_linklabel.Size = New System.Drawing.Size(40, 17)
         Me.WrittenBy_linklabel.TabIndex = 4
@@ -144,14 +144,16 @@ Partial Class KILLTWG_form
         '
         'KILLTWGver_linklabel
         '
-        Me.KILLTWGver_linklabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KILLTWGver_linklabel.AutoSize = True
+        Me.KILLTWGver_linklabel.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.KILLTWGver_linklabel.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.KILLTWGver_linklabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.KILLTWGver_linklabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.KILLTWGver_linklabel.Location = New System.Drawing.Point(216, 21)
+        Me.KILLTWGver_linklabel.Location = New System.Drawing.Point(111, 21)
         Me.KILLTWGver_linklabel.Name = "KILLTWGver_linklabel"
-        Me.KILLTWGver_linklabel.Size = New System.Drawing.Size(0, 17)
+        Me.KILLTWGver_linklabel.Size = New System.Drawing.Size(149, 17)
         Me.KILLTWGver_linklabel.TabIndex = 3
+        Me.KILLTWGver_linklabel.TabStop = True
+        Me.KILLTWGver_linklabel.Text = "Can't get latest version"
         Me.KILLTWGver_linklabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GithubRepo_label
@@ -160,9 +162,9 @@ Partial Class KILLTWG_form
         Me.GithubRepo_label.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
         Me.GithubRepo_label.Location = New System.Drawing.Point(16, 65)
         Me.GithubRepo_label.Name = "GithubRepo_label"
-        Me.GithubRepo_label.Size = New System.Drawing.Size(90, 17)
+        Me.GithubRepo_label.Size = New System.Drawing.Size(88, 17)
         Me.GithubRepo_label.TabIndex = 2
-        Me.GithubRepo_label.Text = "Github Repo :"
+        Me.GithubRepo_label.Text = "GitHub repo :"
         '
         'WrittenBy_label
         '
@@ -180,9 +182,9 @@ Partial Class KILLTWG_form
         Me.KILLTWGver_label.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold)
         Me.KILLTWGver_label.Location = New System.Drawing.Point(16, 21)
         Me.KILLTWGver_label.Name = "KILLTWGver_label"
-        Me.KILLTWGver_label.Size = New System.Drawing.Size(91, 17)
+        Me.KILLTWGver_label.Size = New System.Drawing.Size(98, 17)
         Me.KILLTWGver_label.TabIndex = 0
-        Me.KILLTWGver_label.Text = "KILLTWG.exe :"
+        Me.KILLTWGver_label.Text = "Latest version :"
         '
         'KILLTWG_form
         '

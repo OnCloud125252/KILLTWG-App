@@ -8,13 +8,11 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		KILLTWG|Any CPU = KILLTWG|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.KILLTWG|Any CPU.ActiveCfg = Release|Any CPU
 		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CDBA091-99D7-41B4-B53A-B53B8457DAAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
