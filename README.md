@@ -21,7 +21,7 @@
 
 或是直接下載 LTS (長期支援) 版本 :
 
-- [v1.1.1](https://github.com/Anonymous-AAAA/KILLTWG-App/releases/download/v1.1.1-LTS/KILLTWG.exe "KILLTWG v1.1.1 [LTS] | New Feature + Some Changes")
+- [v1.1.1](https://github.com/Anonymous-AAAA/KILLTWG-App/releases/download/v1.1.1-LTS/KILLTWG_v1.1.1.LTS.exe "KILLTWG v1.1.1 [LTS] | New Feature + Some Changes")
 
 ## How To Use It ?
 
