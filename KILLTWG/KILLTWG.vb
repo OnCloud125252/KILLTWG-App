@@ -5,7 +5,9 @@ Public Class KILLTWG_form
     Private Sub Setup() Handles Me.Activated
         KILLTWGver_linklabel.Text = AppVersion()
         StatusValue()
+        SetTheme_Light()
     End Sub
+
     Function AppVersion()
         Try
             Dim request As HttpWebRequest = WebRequest.Create("https://api.github.com/repos/Anonymous-AAAA/KILLTWG-App/releases/latest")
@@ -34,6 +36,7 @@ Public Class KILLTWG_form
             StatusValue_label.ForeColor = Color.Red
         End If
     End Sub
+
     Private Sub KILL_Click(sender As Object, e As EventArgs) Handles KILL_button.Click
         Try
             Dim dir = My.Computer.FileSystem.GetDirectories("C:\Program Files (x86)\TWG")(0)
@@ -89,12 +92,69 @@ Public Class KILLTWG_form
             Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         End If
     End Sub
-
     Private Sub WrittenBy_linklabel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles WrittenBy_linklabel.LinkClicked
         Process.Start("https://github.com/Anonymous-AAAA")
     End Sub
 
     Private Sub GithubRepo_linklabel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles GithubRepo_linklabel.LinkClicked
         Process.Start("https://github.com/Anonymous-AAAA/KILLTWG-App")
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Process.Start("https://github.com/MRHACO")
+    End Sub
+
+    Private Sub Theme_Light(sender As Object, e As EventArgs) Handles LightToolStripMenuItem.Click
+        SetTheme_Light()
+    End Sub
+
+    Private Sub Theme_Dark(sender As Object, e As EventArgs) Handles DarkToolStripMenuItem.Click
+        SetTheme_Dark()
+    End Sub
+
+    Private Sub SetTheme_Light()
+        BackColor = ColorTranslator.FromHtml("#ffffff")
+        Control_groupbox.ForeColor = ColorTranslator.FromHtml("#000000")
+        GroupBox1.ForeColor = ColorTranslator.FromHtml("#000000")
+        Information_groupbox.ForeColor = ColorTranslator.FromHtml("#000000")
+        KILLTWG_label.ForeColor = ColorTranslator.FromHtml("#000000")
+        RESUME_button.BackColor = ColorTranslator.FromHtml("#ffffff")
+        RESUME_button.ForeColor = ColorTranslator.FromHtml("#000000")
+        RESUME_button.FlatStyle = FlatStyle.Standard
+        KILL_button.BackColor = ColorTranslator.FromHtml("#ffffff")
+        KILL_button.ForeColor = ColorTranslator.FromHtml("#00000")
+        KILL_button.FlatStyle = FlatStyle.Standard
+        KILLTWGver_linklabel.LinkColor = ColorTranslator.FromHtml("#0000FF")
+        KILLTWGver_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#FF0000")
+        WrittenBy_linklabel.LinkColor = ColorTranslator.FromHtml("#0000FF")
+        WrittenBy_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#FF0000")
+        LinkLabel1.LinkColor = ColorTranslator.FromHtml("#0000FF")
+        LinkLabel1.ActiveLinkColor = ColorTranslator.FromHtml("#FF0000")
+        GithubRepo_linklabel.LinkColor = ColorTranslator.FromHtml("#0000FF")
+        GithubRepo_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#FF0000")
+    End Sub
+
+    Private Sub SetTheme_Dark()
+        BackColor = ColorTranslator.FromHtml("#36393e")
+        Control_groupbox.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        GroupBox1.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        Information_groupbox.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        KILLTWG_label.ForeColor = ColorTranslator.FromHtml("#DCDDDE")
+        RESUME_button.BackColor = ColorTranslator.FromHtml("#5865F2")
+        RESUME_button.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        RESUME_button.FlatStyle = FlatStyle.Flat
+        RESUME_button.FlatAppearance.BorderSize = 0
+        KILL_button.BackColor = ColorTranslator.FromHtml("#5865F2")
+        KILL_button.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        KILL_button.FlatStyle = FlatStyle.Flat
+        KILL_button.FlatAppearance.BorderSize = 0
+        KILLTWGver_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
+        KILLTWGver_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
+        WrittenBy_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
+        WrittenBy_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
+        LinkLabel1.LinkColor = ColorTranslator.FromHtml("#5c68f6")
+        LinkLabel1.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
+        GithubRepo_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
+        GithubRepo_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
     End Sub
 End Class
