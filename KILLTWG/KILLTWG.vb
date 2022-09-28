@@ -5,7 +5,9 @@ Public Class KILLTWG_form
     Private Sub Setup() Handles Me.Activated
         KILLTWGver_linklabel.Text = AppVersion()
         StatusValue()
+        SetTheme_Light()
     End Sub
+
     Function AppVersion()
         Try
             Dim request As HttpWebRequest = WebRequest.Create("https://api.github.com/repos/Anonymous-AAAA/KILLTWG-App/releases/latest")
@@ -34,6 +36,7 @@ Public Class KILLTWG_form
             StatusValue_label.ForeColor = Color.Red
         End If
     End Sub
+
     Private Sub KILL_Click(sender As Object, e As EventArgs) Handles KILL_button.Click
         Try
             Dim dir = My.Computer.FileSystem.GetDirectories("C:\Program Files (x86)\TWG")(0)
@@ -89,7 +92,6 @@ Public Class KILLTWG_form
             Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         End If
     End Sub
-
     Private Sub WrittenBy_linklabel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles WrittenBy_linklabel.LinkClicked
         Process.Start("https://github.com/Anonymous-AAAA")
     End Sub
@@ -103,6 +105,14 @@ Public Class KILLTWG_form
     End Sub
 
     Private Sub Theme_Light(sender As Object, e As EventArgs) Handles LightToolStripMenuItem.Click
+        SetTheme_Light()
+    End Sub
+
+    Private Sub Theme_Dark(sender As Object, e As EventArgs) Handles DarkToolStripMenuItem.Click
+        SetTheme_Dark()
+    End Sub
+
+    Private Sub SetTheme_Light()
         BackColor = ColorTranslator.FromHtml("#ffffff")
         Control_groupbox.ForeColor = ColorTranslator.FromHtml("#000000")
         GroupBox1.ForeColor = ColorTranslator.FromHtml("#000000")
@@ -124,7 +134,7 @@ Public Class KILLTWG_form
         GithubRepo_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#FF0000")
     End Sub
 
-    Private Sub Theme_Dark(sender As Object, e As EventArgs) Handles DarkToolStripMenuItem.Click
+    Private Sub SetTheme_Dark()
         BackColor = ColorTranslator.FromHtml("#36393e")
         Control_groupbox.ForeColor = ColorTranslator.FromHtml("#ffffff")
         GroupBox1.ForeColor = ColorTranslator.FromHtml("#ffffff")
@@ -138,10 +148,6 @@ Public Class KILLTWG_form
         KILL_button.ForeColor = ColorTranslator.FromHtml("#ffffff")
         KILL_button.FlatStyle = FlatStyle.Flat
         KILL_button.FlatAppearance.BorderSize = 0
-        'Theme1ToolStripMenuItem.BackColor = ColorTranslator.FromHtml("#5865F2")
-        'Theme1ToolStripMenuItem.ForeColor = ColorTranslator.FromHtml("#ffffff")
-        'LightToolStripMenuItem.BackColor = ColorTranslator.FromHtml("#5865F2")
-        'LightToolStripMenuItem.ForeColor = ColorTranslator.FromHtml("#ffffff")
         KILLTWGver_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
         KILLTWGver_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
         WrittenBy_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
