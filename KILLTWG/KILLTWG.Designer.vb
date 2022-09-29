@@ -41,6 +41,7 @@ Partial Class KILLTWG_form
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Theme1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LightToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HackerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DarkToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Control_groupbox.SuspendLayout()
         Me.Information_groupbox.SuspendLayout()
@@ -247,7 +248,7 @@ Partial Class KILLTWG_form
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Theme1ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(166, 18)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(88, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(208, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "Theme"
         '
@@ -255,7 +256,7 @@ Partial Class KILLTWG_form
         '
         Me.Theme1ToolStripMenuItem.AutoSize = False
         Me.Theme1ToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro
-        Me.Theme1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LightToolStripMenuItem, Me.DarkToolStripMenuItem})
+        Me.Theme1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LightToolStripMenuItem, Me.HackerToolStripMenuItem1, Me.DarkToolStripMenuItem})
         Me.Theme1ToolStripMenuItem.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Theme1ToolStripMenuItem.Name = "Theme1ToolStripMenuItem"
         Me.Theme1ToolStripMenuItem.RightToLeftAutoMirrorImage = True
@@ -265,13 +266,19 @@ Partial Class KILLTWG_form
         'LightToolStripMenuItem
         '
         Me.LightToolStripMenuItem.Name = "LightToolStripMenuItem"
-        Me.LightToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.LightToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LightToolStripMenuItem.Text = "Light"
+        '
+        'HackerToolStripMenuItem1
+        '
+        Me.HackerToolStripMenuItem1.Name = "HackerToolStripMenuItem1"
+        Me.HackerToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.HackerToolStripMenuItem1.Text = "Hacker"
         '
         'DarkToolStripMenuItem
         '
         Me.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem"
-        Me.DarkToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.DarkToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DarkToolStripMenuItem.Text = "Discord Dark"
         '
         'KILLTWG_form
@@ -322,4 +329,5 @@ Partial Class KILLTWG_form
     Friend WithEvents LightToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DarkToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RESUME_button As Button
+    Friend WithEvents HackerToolStripMenuItem1 As ToolStripMenuItem
 End Class

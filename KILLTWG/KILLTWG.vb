@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.Net
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock
 
 Public Class KILLTWG_form
     Private Sub Setup() Handles Me.Activated
@@ -112,6 +113,10 @@ Public Class KILLTWG_form
         SetTheme_Dark()
     End Sub
 
+    Private Sub Theme_Hacker(sender As Object, e As EventArgs) Handles HackerToolStripMenuItem1.Click
+        SetTheme_Hacker()
+    End Sub
+
     Private Sub SetTheme_Light()
         BackColor = ColorTranslator.FromHtml("#ffffff")
         Control_groupbox.ForeColor = ColorTranslator.FromHtml("#000000")
@@ -156,5 +161,27 @@ Public Class KILLTWG_form
         LinkLabel1.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
         GithubRepo_linklabel.LinkColor = ColorTranslator.FromHtml("#5c68f6")
         GithubRepo_linklabel.ActiveLinkColor = ColorTranslator.FromHtml("#5c68f6")
+    End Sub
+
+    Private Sub SetTheme_Hacker()
+        BackColor = Color.FromName("Black")
+        Control_groupbox.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        GroupBox1.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        Information_groupbox.ForeColor = ColorTranslator.FromHtml("#ffffff")
+        KILLTWG_label.ForeColor = Color.FromName("Lime")
+        RESUME_button.BackColor = Color.FromName("Black")
+        RESUME_button.ForeColor = Color.FromName("Lime")
+        RESUME_button.FlatStyle = FlatStyle.Standard
+        KILL_button.BackColor = Color.FromName("Black")
+        KILL_button.ForeColor = Color.FromName("Lime")
+        KILL_button.FlatStyle = FlatStyle.Standard
+        KILLTWGver_linklabel.LinkColor = Color.FromName("Lime")
+        KILLTWGver_linklabel.ActiveLinkColor = Color.FromName("Lime")
+        WrittenBy_linklabel.LinkColor = Color.FromName("Lime")
+        WrittenBy_linklabel.ActiveLinkColor = Color.FromName("Lime")
+        LinkLabel1.LinkColor = Color.FromName("Lime")
+        LinkLabel1.ActiveLinkColor = Color.FromName("Lime")
+        GithubRepo_linklabel.LinkColor = Color.FromName("Lime")
+        GithubRepo_linklabel.ActiveLinkColor = Color.FromName("Lime")
     End Sub
 End Class
