@@ -23,8 +23,6 @@
 
 - [v1.1.1 [LTS]](https://github.com/Anonymous-AAAA/KILLTWG-App/releases/download/v1.1.1-LTS/KILLTWG_v1.1.1.LTS.exe "KILLTWG v1.1.1 [LTS] | New Feature + Some Changes")
 
-或是 Pre Release (先行發布) 版本 :
-- [v1.1.2 [Pre Release]](https://github.com/Anonymous-AAAA/KILLTWG-App/releases/download/v1.1.2/KILLTWG.exe "KILLTWG v1.1.2 | Theme Update")
 
 ## How To Use It ?
 
